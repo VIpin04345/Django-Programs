@@ -1,8 +1,8 @@
 """
-URL configuration for gs2 project.
+URL configuration for ch2 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/5.1/topics/http/urls/
+    https://docs.djangoproject.com/en/6.0/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -16,14 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from course import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.index),
-    path('learndj/',views.learn_dj),
-    path('learnvar/',views.learn_var),
-    path('learnpy/',views.learn_py),
-    path('learnmath/',views.learn_math),
-    path('format/',views.learn_for),
 ]
- 
