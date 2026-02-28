@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django</title>
+    <link rel="stylesheet" href="{% static 'course/css/style.css'%}">
+</head>
+<body>
+    <h1>Django page with static files....!{{nm}}</h1>
+    <img src="{% static 'course/img/slide4.jpg' %}" alt="" style="height: 200px; width: 180px;">
+    <form action="">
+        <input type="button" value="click me" onclick="disp()"/>
+    </form>
+
+    <script src="{% static 'course/js/scripts.js' %}"></script>
+</body>
+</html>
